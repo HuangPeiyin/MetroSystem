@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.metrosystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.metrosystem.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.CityActivity"
+            android:label="@string/title_activity_city" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.MetroActivity"
+            android:label="@string/title_activity_metro" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.ScheduleActivity"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.UpdateVisitorActivity"
+            android:label="@string/title_activity_update_visitor" >
+        </activity>
+        <activity
+            android:name="com.example.metrosystem.VisitorActivity"
+            android:label="@string/title_activity_visitor" >
+        </activity>
+        <service android:enabled="true" android:name="com.example.service.MusicService"></service>
+    </application>
+
+</manifest>

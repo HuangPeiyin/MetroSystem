@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgoldenrodyellow"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity" >
+    
+    <Button
+        android:id="@+id/MenegementMetroBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MenegementCityBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@color/lightgray"
+        android:text="管理地铁信息"
+        android:textColor="@color/cadetblue"
+        android:width="160dp" />
+
+    <Button
+        android:id="@+id/MenegementScheduleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MenegementMetroBtn"
+        android:layout_below="@+id/MenegementMetroBtn"
+        android:layout_marginTop="22dp"
+        android:background="@color/lightgray"
+        android:text="管理时间信息"
+        android:textColor="@color/darkgoldenrod"
+        android:width="160dp" />
+
+    <Button
+        android:id="@+id/MenegementVisitorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MenegementScheduleBtn"
+        android:layout_below="@+id/MenegementScheduleBtn"
+        android:layout_marginTop="22dp"
+        android:background="@color/lightgray"
+        android:text="个人信息"
+        android:textColor="@color/blueviolet"
+        android:width="160dp" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MenegementVisitorBtn"
+        android:layout_below="@+id/MenegementVisitorBtn"
+        android:layout_marginTop="22dp"
+        android:background="@color/lightgray"
+        android:minHeight="35dp"
+        android:text="退出"
+        android:width="160dp" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="欢迎使用地铁信息系统"
+        android:textColor="@color/brown"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/MenegementCityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MenegementMetroBtn"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="15dp"
+        android:background="@color/lightgray"
+        android:text="管理城市信息"
+        android:textColor="@color/tomato"
+        android:width="160dp" />
+
+    <Button
+        android:id="@+id/musicBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textview1"
+        android:background="@color/antiquewhite"
+        android:text="音乐设置"
+        android:textColor="@color/darkcyan"
+        android:width="70dp" />
+
+</RelativeLayout>
